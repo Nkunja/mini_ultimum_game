@@ -1,0 +1,21 @@
+<!-- {% extends "global/Page.html" %}
+
+{% block content %}
+    <h2>Results</h2>
+
+    <p><strong>Player 1:</strong></p>
+    <p>Amount sent to Player 2: <strong>{{ player.amount_sent }}</strong></p>
+    <p>Decision made by Player 3: <strong>{{ player.participant.vars.punish_decision|yesno:"Punish,Not Punish" }}</strong></p>
+    <p>Your payout: <strong>{{ player.payoff }}</strong></p>
+
+    <br>
+
+    <p><strong>Player 2:</strong></p>
+    <p>Amount received from Player 1: <strong>{{ group.get_player_by_id(2).amount_sent }}</strong></p>
+    <p>Decision made by Player 3: <strong>{{ player.participant.vars.punish_decision|yesno:"Punish,Not Punish" }}</strong></p>
+    <p>Your payout: <strong>{{ group.get_player_by_id(2).payoff }}</strong></p>
+    
+    <br>
+
+    <p><a href="{% url 'Survey' %}">Continue to Exit Survey</a></p>
+{% endblock %} -->

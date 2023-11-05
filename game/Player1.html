@@ -1,0 +1,13 @@
+{% extends "global/Page.html" %}
+
+{% block content %}
+    <form method="post">
+        {% csrf_token %}
+        <h2>Player 1</h2>
+        <p>You are endowed with Ksh 200.</p>
+        <p>Send an amount between 0 and 200 to Player 2:</p>
+        {{ form.amount_sent }}
+        <br>
+        <input type="submit" value="Continue">
+    </form>
+{% endblock %}

@@ -1,0 +1,34 @@
+{% extends "global/Page.html" %}
+
+{% block content %}
+    <h2>Exit Survey</h2>
+
+    <form method="post">
+        {% csrf_token %}
+        
+        <p>Q1. What is the capital city of Kenya? (Choose one from the given options)</p>
+        <label for="id_q1">
+            <select id="id_q1" name="q1">
+                <option value="" selected disabled>Select an option</option>
+                <option value="Kisumu">Kisumu</option>
+                <option value="Nairobi">Nairobi</option>
+                <option value="Mombasa">Mombasa</option>
+            </select>
+        </label>
+
+        <p>Q2. What is 14 + 15?</p>
+        <label for="id_q2">
+            <input type="number" id="id_q2" name="q2" required>
+        </label>
+
+        <p>Q3. What is the population of Kenya?</p>
+        <label for="id_q3">
+            <input type="number" id="id_q3" name="q3" required>
+        </label>
+
+        <br>
+
+        <input type="submit" value="Submit">
+    </form>
+    
+{% endblock %}

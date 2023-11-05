@@ -1,0 +1,16 @@
+{% extends "global/Page.html" %}
+
+{% block content %}
+    <form method="post">
+        {% csrf_token %}
+        <h2>Player 3 (Punisher)</h2>
+        <p>Player 1 has decided to send the following amount to Player 2:</p>
+        <p><strong>{{ amount_sent }}</strong></p>
+        <p>Now, you must decide whether to punish or not punish Player 1:</p>
+        <label for="id_punish_decision">
+            {{ form.punish_decision }}
+        </label>
+        <br><br>
+        <input type="submit" value="Continue">
+    </form>
+{% endblock %}
